@@ -1,0 +1,16 @@
+This file contains links to data which is used in this project (my google drive)
+
+(From Kaggle)
+MNIST train data
+https://drive.google.com/file/d/1vz02c_roOBZ_d3qPksVvqsxCAZSa2ovR/view?usp=sharing
+MNIST test data
+https://drive.google.com/file/d/1hVLbPa_odayF2g-Nsjfd7weI2Cy2DQwW/view?usp=sharing
+
+CatNonCatData (these files are existed in this repository)
+https://github.com/ridhimagarg/Cat-vs-Non-cat-Deep-learning-implementation/tree/master/datasets
+
+
+You should not download these 2 files, i did it for you. 
+(Just to know which data was figured in this project)
+
+Next data to the next problems on which i want to test network will appear later.
