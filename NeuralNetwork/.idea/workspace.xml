@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee947441-0e14-4ba1-baad-ae2a6d6e1596" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qu1CYMAB2M204GugGrFQDcQ6Ya" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/DataManagement" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ProjectManager" />
+      <recent name="$PROJECT_DIR$/NeuralNetwork" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.console_application">
+    <configuration name="NetModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/NeuralNetwork" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/NeuralNetwork/NetModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="console_application" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/console_application.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="label" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Labels" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Labels/label.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tasks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/DataManagement/Problems" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/DataManagement/Problems/tasks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.console_application" />
+        <item itemvalue="Python.NetModel" />
+        <item itemvalue="Python.label" />
+        <item itemvalue="Python.tasks" />
+        <item itemvalue="Python.test_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee947441-0e14-4ba1-baad-ae2a6d6e1596" name="Default Changelist" comment="" />
+      <created>1617914533415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617914533415</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618914986203">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="446" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.798@0.25.1440.798" timestamp="1618914986203" />
+    <state width="1395" height="267" key="GridCell.Tab.0.bottom" timestamp="1619193785421">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state width="1395" height="267" key="GridCell.Tab.0.bottom/0.25.1440.798@0.25.1440.798" timestamp="1619193785421" />
+    <state width="1395" height="325" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1619045164714" />
+    <state width="1395" height="251" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1618601203404" />
+    <state width="1395" height="267" key="GridCell.Tab.0.center" timestamp="1619193785420">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state width="1395" height="267" key="GridCell.Tab.0.center/0.25.1440.798@0.25.1440.798" timestamp="1619193785420" />
+    <state width="1395" height="325" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1619045164714" />
+    <state width="1395" height="251" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1618601203404" />
+    <state width="1395" height="267" key="GridCell.Tab.0.left" timestamp="1619193785420">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state width="1395" height="267" key="GridCell.Tab.0.left/0.25.1440.798@0.25.1440.798" timestamp="1619193785420" />
+    <state width="1395" height="325" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1619045164713" />
+    <state width="1395" height="251" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1618601203404" />
+    <state width="1395" height="267" key="GridCell.Tab.0.right" timestamp="1619193785421">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state width="1395" height="267" key="GridCell.Tab.0.right/0.25.1440.798@0.25.1440.798" timestamp="1619193785421" />
+    <state width="1395" height="325" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1619045164714" />
+    <state width="1395" height="251" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1618601203404" />
+    <state width="1395" height="251" key="GridCell.Tab.1.bottom" timestamp="1618601203405">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state width="1395" height="251" key="GridCell.Tab.1.bottom/0.25.1440.799@0.25.1440.799" timestamp="1618597091815" />
+    <state width="1395" height="251" key="GridCell.Tab.1.bottom/0.25.1440.801@0.25.1440.801" timestamp="1618601203405" />
+    <state width="1395" height="251" key="GridCell.Tab.1.center" timestamp="1618601203405">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state width="1395" height="251" key="GridCell.Tab.1.center/0.25.1440.799@0.25.1440.799" timestamp="1618597091814" />
+    <state width="1395" height="251" key="GridCell.Tab.1.center/0.25.1440.801@0.25.1440.801" timestamp="1618601203405" />
+    <state width="1395" height="251" key="GridCell.Tab.1.left" timestamp="1618601203405">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state width="1395" height="251" key="GridCell.Tab.1.left/0.25.1440.799@0.25.1440.799" timestamp="1618597091814" />
+    <state width="1395" height="251" key="GridCell.Tab.1.left/0.25.1440.801@0.25.1440.801" timestamp="1618601203405" />
+    <state width="1395" height="251" key="GridCell.Tab.1.right" timestamp="1618601203405">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state width="1395" height="251" key="GridCell.Tab.1.right/0.25.1440.799@0.25.1440.799" timestamp="1618597091815" />
+    <state width="1395" height="251" key="GridCell.Tab.1.right/0.25.1440.801@0.25.1440.801" timestamp="1618601203405" />
+    <state x="211" y="60" key="SettingsEditor" timestamp="1619193783554">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="211" y="60" key="SettingsEditor/0.25.1440.798@0.25.1440.798" timestamp="1619193783554" />
+    <state x="100" y="125" width="1216" height="598" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1619189344599">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="100" y="125" width="1216" height="598" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.1440.798@0.25.1440.798" timestamp="1619189344599" />
+    <state x="380" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1619381058150">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state x="380" y="253" key="com.intellij.ide.util.TipDialog/0.25.1440.798@0.25.1440.798" timestamp="1619194107823" />
+    <state x="380" y="253" key="com.intellij.ide.util.TipDialog/0.25.1440.799@0.25.1440.799" timestamp="1619029832850" />
+    <state x="380" y="255" key="com.intellij.ide.util.TipDialog/0.25.1440.804@0.25.1440.804" timestamp="1619381058150" />
+    <state x="439" y="127" width="827" height="550" key="find.popup" timestamp="1618504689765">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="439" y="127" width="827" height="550" key="find.popup/0.25.1440.798@0.25.1440.798" timestamp="1618504689765" />
+    <state x="493" y="59" key="refactoring.ChangeSignatureDialog" timestamp="1617974078988">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="493" y="59" key="refactoring.ChangeSignatureDialog/0.25.1440.798@0.25.1440.798" timestamp="1617974078988" />
+    <state x="369" y="150" width="670" height="674" key="search.everywhere.popup" timestamp="1618839126087">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="369" y="150" width="670" height="674" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1618839126087" />
+    <state x="369" y="150" width="670" height="676" key="search.everywhere.popup/0.25.1440.801@0.25.1440.801" timestamp="1618600718038" />
+  </component>
+</project>
