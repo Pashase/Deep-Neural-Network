@@ -51,9 +51,8 @@ def main(small_parameter: float, alpha: float, epochs: int) -> None:
                                                          countIterations=epochs,
                                                          print_cost=True)
 
-        # NN_model.build_plot_convergence(costs)
-        print(f'Weights after learning from out function variable:\n{updated_weights}\n\n')
-        print(f'Weights after learning from Class variable:\n{updated_weights}\n\n')
+        NN_model.build_plot_convergence(costs)
+        predictions, caches = NN_model.predict(test_data)
 
     if selected_problem == ConsiderTasks.CatNonCatTask.value:
         train_data, test_data, classes = DataManager.get_CatNonCat_Data()
@@ -85,16 +84,13 @@ def main(small_parameter: float, alpha: float, epochs: int) -> None:
                                                          print_cost=True)
 
         NN_model.build_plot_convergence(costs)
-
-        # predictions, y_test = NN_model.predict(test_data)
-        # print(f'My predictions: {predictions}\n\n'
-        #       f'Real y: {y_test}')
+        predictions, caches = NN_model.predict(test_data)
 
 
 if __name__ == '__main__':
     # set start parameters to all Models
     small_parameter = 0.00034
     alpha = 0.033
-    epochs = 15
+    epochs = 30
 
     main(small_parameter, alpha, epochs)

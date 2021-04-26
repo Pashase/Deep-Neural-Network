@@ -125,19 +125,14 @@ class Model(NetworkArchitecture):
         return initialized_weights, costs
 
     def predict(self, test_data: dict):
-        X_test = test_data['X']
-        y_test = test_data['y']
+        weights = self.weights
 
-        trained_weights = self.weights
+        # AL -- predictions
+        AL, caches = __propogations__.full_L_forward_propogation(NetworkArchitecture(self.Layers), test_data, weights)
 
-        last_W, last_b = trained_weights[__label__.Label.W.value + str(self.LayersCount)], \
-                         trained_weights[__label__.Label.b.value + str(self.LayersCount)]
+        predictions, caches = np.array([np.where(prediction_vector > 0.5, 1, 0) for prediction_vector in AL])
 
-        A = self.Layers[-1].activationFunction(np.dot(last_W.T, X_test) + last_b)
-
-        A = np.where(A > 0.5, 1, 0)
-
-        return A, y_test
+        return predictions, caches
 
     def __str__(self) -> str:
         return f'-------------------------- Model information --------------------------\n' \
