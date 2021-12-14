@@ -26,14 +26,14 @@ DROPOUT_METHOD = 'dropout'
 def initialize_weights(nn_architecture: NetworkArchitecture,
                        *,
                        small_parameter=0.01,
-                       seed_number: int = 42) -> tp.Dict[str, tp.Union[float, np.ndarray]]:
+                       seed_number: int = 42):
     np.random.seed(seed_number)
 
     weights = dict()
     label_W, label_b, _, label_A = __label__.Label.values()
 
     for indexLayer, layer in enumerate(nn_architecture.Layers, start=1):
-        # имеем дело со входным слоем
+        # Input layer
         weights[label_W + str(indexLayer)] = np.random.randn(layer.neuronsCount,
                                                              layer.prevLayerNeuronsCount) * small_parameter
         weights[label_b + str(indexLayer)] = np.zeros((layer.neuronsCount, 1))
@@ -47,7 +47,7 @@ def initialize_weights(nn_architecture: NetworkArchitecture,
 def gradientDescent(weights: dict,
                     gradients: dict,
                     alpha: float,
-                    nn_architecture: NetworkArchitecture) -> tp.Dict[str, tp.Union[float, np.ndarray]]:
+                    nn_architecture: NetworkArchitecture):
     """
 
     Update parameters using simple gradient descent
@@ -82,8 +82,8 @@ class Model(NetworkArchitecture):
         # self.weights = initialize_weights(NetworkArchitecture(layers), small_parameter=small_param)
         self.weights = weights
 
-    def start_learning(self, *, alpha: float = 0.003, optimization_algorithm_name: str,
-                       countIterations: int, print_cost=True):
+    def start_learning(self, *, alpha: float = 0.003, optimization_algorithm_name: str = 'gradient_descent',
+                       countIterations: int = 10, print_cost: bool = True):
 
         optimization_algorithm = gradientDescent
 
@@ -124,13 +124,13 @@ class Model(NetworkArchitecture):
 
         return initialized_weights, costs
 
-    def predict(self, test_data: dict):
+    def predict(self, test_data: dict, threshold: float):
         weights = self.weights
 
         # AL -- predictions
         AL, caches = __propogations__.full_L_forward_propogation(NetworkArchitecture(self.Layers), test_data, weights)
 
-        predictions, caches = np.array([np.where(prediction_vector > 0.5, 1, 0) for prediction_vector in AL])
+        predictions, caches = np.array([np.where(prediction_vector > threshold, 1, 0) for prediction_vector in AL])
 
         return predictions, caches
 
@@ -142,10 +142,10 @@ class Model(NetworkArchitecture):
 
     @staticmethod
     def build_plot_convergence(convergence_history: dict) -> None:
-        sns.set(rc={'figure.figsize': (11.7, 8.27)})
-
         convergence_data = pd.DataFrame({'Iterations': convergence_history.keys(),
                                          'Cost': convergence_history.values()})
 
         sns.scatterplot(x=convergence_data['Iterations'], y=convergence_data['Cost'], data=convergence_data)
         plt.show()
+
+        return None

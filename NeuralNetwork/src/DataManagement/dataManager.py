@@ -18,19 +18,7 @@ TRAINING_CAT_NON_CAT_DATA_LOCAL = __paths__.TRAINING_CAT_NON_CAT_DATA_LOCAL
 TEST_CAT_NON_CAT_DATA_LOCAL = __paths__.TEST_CAT_NON_CAT_DATA_LOCAL
 
 
-# --
-
-# def get_local_data_path(project_path: str, problem_name: str):
-#     file_names_list = [os.path.join(dir_name, file_name)
-#                        for dir_name, _, file_names in os.walk(project_path)
-#                        for file_name in file_names if problem_name + '/Data' in dir_name and '.csv' in file_name]
-#     return file_names_list
-#
-#
-# def get_project_abs_path() -> str:
-#     return os.path.dirname(os.path.abspath('__main__'))
-
-def get_MNIST_Data(train_data_path: str = None, test_data_path: str = None) -> tp.Tuple[train_data_dict, test_data_dict]:
+def get_MNIST_Data(train_data_path: str = None, test_data_path: str = None):
     """
         Input arguments:
          train_data_path, test_data_path -- path's to data in csv format
@@ -56,7 +44,7 @@ def get_MNIST_Data(train_data_path: str = None, test_data_path: str = None) -> t
     return train_data, test_data
 
 
-# get CatNonCAt data and preprocessing it
+# get CatNonCat data and standartize it
 
 def standardize_data(image2vector_function: tp.Callable):
     @functools.wraps(image2vector_function)
@@ -78,7 +66,7 @@ def standardize_data(image2vector_function: tp.Callable):
 
 
 @standardize_data
-def image2vector(X_train: np.array, X_test: np.array) -> tp.Tuple[np.ndarray, np.ndarray]:
+def image2vector(X_train: np.array, X_test: np.array):
     m_train, height, width, depth = X_train.shape
     n_x = height * width * depth
 
@@ -139,7 +127,7 @@ def get_CatNonCat_Data(train_data_path: str = None, test_data_path: str = None):
     return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, classes
 
 
-def get_binary_matrix(y: np.array, *, num_of_labels=10) -> np.ndarray:
+def get_binary_matrix(y: np.array, *, num_of_labels=10):
     """
     Convert each y_i-label to a (num_of_labels, 1) column vector and return a matrix of this vectors
 

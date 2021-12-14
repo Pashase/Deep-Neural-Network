@@ -3,6 +3,9 @@ import typing as tp
 import src.NeuralNetwork.sigmoid as __sigmoid__
 import src.NeuralNetwork.relu as __relu__
 
+from src.DataManagement.Problems.default_architectures import dr_layers
+from src.DataManagement.Problems.default_architectures import cnc_layers
+
 from src.DataManagement.Problems.tasks import ConsiderTasks
 from matplotlib import pyplot as plt
 
@@ -29,35 +32,13 @@ class NetworkArchitecture(object):
         self.LayersCount = len(layers)
 
     @staticmethod
-    def init_NN_architecture(data: dict, problem_name: str) -> tp.List[Layer]:
-
+    def init_NN_architecture(problem_name: str) -> tp.List[Layer]:
+        layers = None
         # this method could be edited according to a new task
         if problem_name == ConsiderTasks.DigitRecognitionTask.value:
-            layers = [
-                # во входной слой обязательно передать данные (тренировочные/тестовые)
-                Layer(prevLayerNeuronsCount=InputLayer(data).n_x, neuronsCount=20, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=20, neuronsCount=16, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=16, neuronsCount=13, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=13, neuronsCount=10, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=10, neuronsCount=10, activationFunction=__sigmoid__.sigmoid,
-                      backward_activation=__sigmoid__.sigmoid_backward)
-            ]
+            layers = dr_layers
         elif problem_name == ConsiderTasks.CatNonCatTask.value:
-            layers = [
-                # во входной слой обязательно передать данные (тренировочные/тестовые)
-                Layer(prevLayerNeuronsCount=InputLayer(data).n_x, neuronsCount=20, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=20, neuronsCount=16, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=16, neuronsCount=10, activationFunction=__relu__.relu,
-                      backward_activation=__relu__.relu_backward),
-                Layer(prevLayerNeuronsCount=10, neuronsCount=2, activationFunction=__sigmoid__.sigmoid,
-                      backward_activation=__sigmoid__.sigmoid_backward)
-            ]
+            layers = cnc_layers
         else:
             raise ValueError(f'There is no task {problem_name}!')
 
@@ -107,3 +88,5 @@ class NetworkArchitecture(object):
                     line = plt.Line2D([n * h_spacing + left, (n + 1) * h_spacing + left],
                                       [layer_top_a - m * v_spacing, layer_top_b - o * v_spacing], c='k')
                     ax.add_artist(line)
+
+        return None
