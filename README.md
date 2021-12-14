@@ -1,2 +1,2 @@
 # Deep-Neural-Network
-This repository is created to solve some real multiclass classification problems using deep neural network which was written from scratch
+This repository is created to solve some real multiclass classification or regression problems using deep neural networks (DNN) which were written from scratch.
